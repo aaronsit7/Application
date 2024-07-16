@@ -1,0 +1,8 @@
+pip install -r requirements.txt
+
+python app.py
+
+python login.py
+python signup.py
+python loginMYSQL.py
+python signupMYSQL.py
