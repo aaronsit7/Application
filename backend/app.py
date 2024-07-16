@@ -10,22 +10,7 @@ CORS(app)
 def home():
     return "Server is running"
 
-@app.route('/login', methods=['POST'])
-def login():
-    data = request.get_json()
-    username = data.get('username')
-    password = data.get('password')
-    result, status_code = login_user(username, password)
-    return jsonify(result), status_code
-
-
-@app.route('/signup', methods=['POST'])
-def signup():
-    data = request.get_json()
-    username = data.get('username')
-    password = data.get('password')
-    result, status_code = create_user(username, password)
-    return jsonify(result), status_code
+#code login and signup routes here
 
 
 if __name__ == '__main__':
