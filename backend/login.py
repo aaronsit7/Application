@@ -22,7 +22,7 @@ def login_user(username, password):
     if not bcrypt.checkpw(password.encode('utf-8'), user['password']):
         print("Invalid username or password.")
         return {"message": "Invalid username or password."}, 401
-
+    print("Login successful!")
     return {"message": "Login successful!"}, 200
 
 
