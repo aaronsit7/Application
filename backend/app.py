@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from login import login_user
-from signup import create_user
+from loginMYSQL import login_user
+from signupMYSQL import create_user
 
 app = Flask(__name__)
 CORS(app)
